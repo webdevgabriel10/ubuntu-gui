@@ -1,0 +1,10 @@
+
+services:
+  ubuntu-gui:
+    build: .
+    ports:
+      - "5900:5900"
+      - "3389:3389"
+    volumes:
+      - ./data:/data
+    container_name: ubuntu_gui
